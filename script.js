@@ -23,7 +23,6 @@ function GameBoard() {
       return successfulUpdate;
     }
     else {
-      console.log("Error u can`t update used cell.")
       return successfulUpdate;
     }
   }
@@ -163,7 +162,7 @@ function startBtn() {
     } else {
       startGame.start();
       ScreenController(playerOneName, playerTwoName);
-    }
+    } 
   })
 }
 //---------------------------------------------------
@@ -171,8 +170,11 @@ function ScreenController(player1Name = "Player One", player2Name = "Player Two"
   let game = GameController(player1Name, player2Name);
   const playerTurnDiv = document.querySelector('.turn');
   const boardDiv = document.querySelector('.game');
-  const resetBoard = () => game.clearBoard();
   const resetBtn = document.querySelector('.reset');
+
+
+
+  const resetBoard = () => game.clearBoard();
 
 
   const createGrid = () => {

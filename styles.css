@@ -16,7 +16,7 @@ body {
     top: 70px;
     font-size: 5rem;
     font-weight: bold;
-    left: 50%;
+    left: 42%;
 }
 .game-container {
     width: 30%;
@@ -104,7 +104,7 @@ input[type="text"]:focus {
 }
 label {
     display: inline-block;
-    width: 260px;
+    width: 280px;
     padding: 10px;
 }
 .first-player-container, .second-player-container {
